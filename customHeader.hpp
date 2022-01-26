@@ -15,6 +15,7 @@
 #define fi first
 #define se second
 
+
 // to be used with algorithms that processes a container Eg: find(all(c),42)
 #define all(x) (x).begin(), (x).end() //Forward traversal
 #define rall(x) (x).rbegin, (x).rend() //reverse traversal
@@ -31,6 +32,9 @@
 // Avoiding wrap around of size()-1 where size is a unsigned int.
 #define sz(a) int((a).size())
 
+// Generic size function
+template<typename T, int size>
+int arrSize(T(&)[size]){return size;}
 
 using namespace std;
 
